@@ -1,0 +1,37 @@
+section .caixaAviso {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: orange;
+  padding: 2vw;
+  width: 33vw;
+  height: 23vh;
+  margin: auto 3vw;
+  position: relative;
+  border-radius: 10px;
+}
+
+section #ProdutoDestacado {
+  font-size: 2rem;
+  position: absolute;
+  top: -4vh;
+  left: 6.3vh;
+  z-index: 9999;
+  font-weight: bold;
+  background: orange;
+  padding: 0.5vh;
+  border-radius: 7px;
+}
+section .paragrafoProduto {
+  font-weight: bold;
+}
+section {
+  position: relative;
+}
+section .tituloProduto {
+  font-size: 2em;
+  margin: 0;
+}
+section .produtoAmostra img {
+  border-radius: 15px;
+}
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Stylesheets/linker.css">
+    <title>Dashboard Solar</title>
+</head>
+<body>
+    <div class="container">
+      <aside class="sidebar">
+         <div>
+            <header class="sidebar-header">
+                <div class="logo-elemento">
+                    <img class="logo-solar" src="../Assets/Common/imgs/SOLAR-LOGO.png" alt="SOLAR-LOGO.png">
+                    <img class="line"  src="../Assets/Common/imgs/Line 7.png" alt="">
+                </div>
+            </header>
+            <nav class="botao-cima">
+                <button onclick="window.location.href='./'">
+                    <span>
+                        <span>DASHBOARD</span>
+                    </span>
+                </button>
+                <button onclick="window.location.href='./'">
+                    <span>
+                        <span>CLIENTES</span>
+                    </span>
+                </button>
+                <button onclick="window.location.href='./'">
+                    <span>
+                        <span>PRODUTOS</span>
+                    </span>
+                </button>
+                <button onclick="window.location.href='./'">
+                    <span>
+                        <span>PROMOÇÕES</span>
+                    </span>
+                </button>
+                <button onclick="window.location.href='./'">
+                    <span>
+                        <span>RELATÓRIO</span>
+                    </span>
+                </button>
+            </nav>
+    </div>
+        <div id="cor">
+            <div class="nav-baixa">
+                <nav class="botao-fundo">
+                    <button onclick="window.location.href='./Login.html'">
+                        <span>SAIR</span>
+                    </button>
+                    <button onclick="window.location.href='./Perfil.html'">
+                        <span>
+                            <span>MEU PERFIL</span>
+                        </span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </aside>
+        <main>
+            <div class="caixistadisplay">      
+                <div class="caixadisplay">
+                    <div class="elementosdisplay" id="Vendascaixa">
+                    <span class="titulodisplay">Vendas</span>
+                    <span>
+                        <h1 class="displayvalor" id="vendasvalor">20 mil</h1>
+                    </span>
+                    <span class="scoreDisplay" id="scorevendas"><img src="../Assets/Common/imgs/adicionar.png" alt="" class="scoreDisplay">1,1 mil</span>
+                </div>
+                    <div class="images">
+                        <img src="../Assets/Common/imgs/excluir.png" alt="vendas.png">
+                    </div>
+                </div>
+            </div>
+            <div class="caixistadisplay">      
+                <div class="caixadisplay" id="EngajamentoDisplay">
+                    <div class="elementosdisplay">
+                    <span class="titulodisplay">Engajamento</span>
+                    <span>
+                        <h1 class="displayEngajamento" id="engajamentoValor">20 mil</h1>
+                    </span>
+                    <span class="scoreDisplay" id="scoreEngajamento"><img src="../Assets/Common/imgs/adicionar.png" alt="" class="scoreDisplay">1,1 mil</span>
+                </div>
+                    <div class="images">
+                        <img src="../Assets/Common/imgs/excluir.png" alt="vendas.png">
+                    </div>
+                </div>
+            </div>
+            <div class="caixistadisplay">      
+                <div class="caixadisplay" id="retencaoDisplay">
+                    <div class="elementosdisplay">
+                    <span class="titulodisplay">Retenção</span>
+                    <span>
+                        <h1 class="displayRetencao" id="retencaoValor">20 mil</h1>
+                    </span>
+                    <span class="scoreDisplay" id="scoreRetencao"><img src="../Assets/Common/imgs/adicionar.png" alt="retencao.png" class="scoreDisplay">1,1 mil</span>
+                </div>
+                    <div class="images">
+                        <img src="../Assets/Common/imgs/excluir.png" alt="vendas.png">
+                    </div>
+                </div>
+            </div>
+            <div class="caixistadisplay">      
+                <div class="caixadisplay">
+                    <div class="elementosdisplay" id="sucessoTaxaDisplay">
+                    <span class="titulodisplay">Taxa de Sucesso</span>
+                    <span>
+                        <h1 class="displayTaxaSucesso" id="SucessoTaxaValor">20 mil</h1>
+                    </span>
+                    <span class="scoreDisplay" id="scoreTaxaSucesso"><img src="../Assets/Common/imgs/adicionar.png" alt="taxaSucesso.png" class="scoreDisplay">1,1 mil</span>
+                </div>
+                    <div class="images">
+                        <img src="../Assets/Common/imgs/excluir.png" alt="vendas.png">
+                    </div>
+                </div>
+            </div>
+            
+            <section class="secaoGeral" id="secaoGeral">
+                <div class="avisosProdutos" id="avisoProduto">
+                    <span id="ProdutoDestacado">#Produto Destaque</span>
+                </div>
+                <div class="caixaAviso">
+                    <div class="produtoAmostra" id="AmostragemProduto">
+                        <img src="../Assets/Common/imgs/fanta-caju-300x200.png" alt="">
+                    </div>
+                    <div class="conteudoProduto">
+                        <h1 class="tituloProduto">Fanta Caju</h1>
+                        <p class="paragrafoProduto">Descubra o sabor tropical e refrescante da nova Fanta Caju, agora na versão de 350ml! Esse lançamento promete trazer uma explosão de sabor que você nunca experimentou antes. A Fanta Caju 350ml é a combinação perfeita entre o doce e o azedinho do caju, criando um refrigerante irresistível para os amantes de bebidas frutadas.</p>
+                    </div>
+                </div>
+            </section>    
+        </main>
+    </div>
+<script src="./Dashboard.js"></script>
+</body>
+</html>

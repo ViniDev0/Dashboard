@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Stylesheets/linker.css">
+    <title>Aside Solar</title>
+</head>
+<body> 
+    <!-- crud add cliente -->
+    <div class="container">
+      <aside class="sidebar">
+         <div>
+            <header class="sidebar-header">
+                <div class="logo-elemento">
+                    <img class="logo-solar" src="../Assets/Common/imgs/SOLAR-LOGO.png" alt="">
+                    <img class="line"  src="../Assets/Common/imgs/Line 7.png" alt="">
+                </div>
+            </header>
+            <nav class="botao-cima">
+                <button onclick="window.location.href='./Dashboard.html'">
+                    <span>
+                        <span>DASHBOARD</span>
+                    </span>
+                </button>
+                <button onclick="window.location.href='./'">
+                    <span>
+                        <span>CLIENTES</span>
+                    </span>
+                </button>
+                <button onclick="window.location.href='./Produtos.html'">
+                    <span>
+                        <span>PRODUTOS</span>
+                    </span>
+                </button>
+                <button onclick="window.location.href='./Promocoes.html'">
+                    <span>
+                        <span>PROMOÇÕES</span>
+                    </span>
+                </button>
+                <button onclick="window.location.href='./Relatorio.html'">
+                    <span>
+                        <span>RELATÓRIO</span>
+                    </span>
+                </button>
+            </nav>
+    </div>
+        <div id="cor">
+            <div class="nav-baixa">
+                <nav class="botao-fundo">
+                    <button>
+                        <span>SAIR</span>
+                    </button>
+                    <button>
+                        <span>
+                            <span>MEU PERFIL</span>
+                        </span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </aside>
+    <main>
+
+        
+
+
+
+        <div class="conteiner-tabela">
+           
+            <div class="conteinerBuscarClinte">
+                <h2>Buscar Cliente</h2>
+                 <div class="pesquisa">
+                    <input type="text" id="pesquisa" placeholder="Pesquisar..." button="">
+                </div>
+            </div>
+         <div class="tabela-conteiner">
+                <table id="tableClient">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Contato</th>
+                            <th>Endereço</th>
+                            <th>Nível</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+        <tbody>
+            <tr>
+            </tr>
+                <!-- <tr>
+                    <td>Maria Silva</td>
+                    <td>(81) 91234-5678</td>
+                    <td>Rua das Flores</td>
+                    <td><img src="./imgs/Moeda Bronze.png" alt=""></td>
+                    <td>
+                        <button type="button" id="edit">Editar</button>
+                        <button type="button" id="exclude">Excluir</button>
+                    </td> -->
+            </tbody>
+        </table>        
+                
+            </div>
+
+        
+        
+    </div>
+    <div class="botao-cabecalho">     
+        <button class="open-modal"> <img src="./imgs/adicionar.png" alt=""><span> Add Cliente</span></button>
+    </div>
+   
+
+        
+
+
+        
+        <!-- Modal -->
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modal-header">
+                <img  id="logo-cliente" src="./imgs/Cliente-Solar.png" alt="">
+                <button id="close-modal"> <img src="./imgs/excluir.png" alt=""></button>
+            </div>
+            <div class="modal-body">
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Cliente"required>
+                    <input type="text" id="contato" class="modal-field" placeholder="Contato do Cliente" required>
+                    <input type="text" id="endereco" class="modal-field" placeholder="Endereço do Cliente" required>
+                    <input type="text" id="nivel" class="modal-field" placeholder="Nivel do Cliente" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button-green">Salvar</button>
+                    <button id="cancelar" class="button-red">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="./clientes.js"></script>
+</body>
+</html>

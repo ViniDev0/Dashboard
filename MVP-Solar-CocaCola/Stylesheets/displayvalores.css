@@ -1,0 +1,27 @@
+main .caixadisplay {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  background: red;
+  width: 15vw;
+  height: 15vh;
+  margin: 3vw 3vw;
+  border-radius: 15px;
+}
+main .caixistadisplay {
+  display: inline-flex;
+}
+main .caixadisplay h1 {
+  margin: 0;
+
+}
+main .images {
+  align-content: center;
+  justify-self: center;
+}
+main .elementosdisplay {
+  margin: 3vh;
+}
+
+main .titulodisplay {
+  font-size: 1.2rem;
+}
