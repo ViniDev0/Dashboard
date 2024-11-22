@@ -1,3 +1,5 @@
 @import "./aside.css";
 @import "./displayvalores.css";
 @import "./tabelas.css";
+/* @import "./loginPage.css"; */ 
+/* Devido aos outros layouts usarem o body sem CLASS ou ID não é possível alterar, mudança prioritária */
